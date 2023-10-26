@@ -2,7 +2,6 @@
 
 describe("Central de Atendimento ao Cliente TAT", { testIsolation: false }, function () {
   this.beforeEach(() => {
-    cy.viewport(410, 860)
     cy.clearLocalStorage()
     cy.clearCookies()
     cy.visit("./src/index.html");
