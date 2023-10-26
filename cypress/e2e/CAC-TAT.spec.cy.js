@@ -3,7 +3,7 @@
 describe("Central de Atendimento ao Cliente TAT", function () {
   this.beforeEach(() => {
     cy.viewport(410, 860)
-    cy.visit("./src/index.html");
+    cy.origin("./src/index.html");
   });
 
   it("verifica o título da aplicação", function () {
