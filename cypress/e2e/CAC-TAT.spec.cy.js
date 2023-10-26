@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
-describe("Central de Atendimento ao Cliente TAT", function () {
+describe("Central de Atendimento ao Cliente TAT", { testIsolation: false }, function () {
   this.beforeEach(() => {
     cy.viewport(410, 860)
+    cy.clearLocalStorage()
+    cy.clearCookies()
     cy.origin("./src/index.html");
   });
 
